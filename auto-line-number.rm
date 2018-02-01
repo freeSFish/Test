@@ -1,0 +1,45 @@
+插件描述：在textarea自动添加行号。
+extarea标签自动显示行号(Textarea tags automatically displays line Numbers)
+
+html
+
+1
+2
+3
+4
+5
+<body>
+  <textarea type="text" id="text" class="text"></textarea>
+  <script src="./js/jquery-1.12.0.min.js"></script>
+  <script src="./js/auto-line-number.js"></script>
+</body>
+JavaScript
+
+1
+$("#textarea").setTextareaCount();
+Option
+
+1
+2
+3
+4
+width 行号条的宽度，默认30px
+color 行号条的字体颜色，默认#FFF
+bgColor 行号条的背景颜色，默认#333
+display 行号条的类型，默认block
+Example
+
+支持使用类名可同时多个配置
+
+1
+2
+3
+4
+5
+6
+$(".textarea").setTextareaCount({
+    width: "30px",
+   bgColor: "#999",
+   color: "#FFF",
+   display: "block"
+});
